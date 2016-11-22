@@ -56,7 +56,7 @@ public class LogRegView: UIView {
     public lazy var registerButton: UIButton = {
         let b = UIButton(type: .system)
         b.translatesAutoresizingMaskIntoConstraints = false
-        b.backgroundColor = .red
+        b.backgroundColor = UIColor(red: 230/255, green: 79/255, blue: 76/255, alpha: 1)
         b.setTitle("Register", for: [])
         b.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         b.addTarget(self, action: #selector(loginButtonTapped(sender:)), for: .touchUpInside)
@@ -104,6 +104,7 @@ public class LogRegView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 44/255, green: 61/255, blue: 78/255, alpha: 1)
         setupViews()
         setField(color: .white)
     }
