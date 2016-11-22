@@ -10,7 +10,6 @@ import UIKit
 
 public class CustomTextField: UITextField {
     
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         

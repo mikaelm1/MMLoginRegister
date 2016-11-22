@@ -93,7 +93,7 @@ public class LogRegView: UIView {
     
     var registering = true
     var stackViewHeight: NSLayoutConstraint?
-    var delegate: LogRegViewDelegate?
+    public var delegate: LogRegViewDelegate?
     public var fieldColor: UIColor = .white {
         didSet {
             setField(color: fieldColor)
