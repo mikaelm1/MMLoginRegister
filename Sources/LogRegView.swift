@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LogRegViewDelegate {
+public protocol LogRegViewDelegate {
     func register(withPassword password: String, username: String, email: String)
     func login(withPassword password: String, username: String)
 }
@@ -19,11 +19,11 @@ extension String {
     }
 }
 
-class LogRegView: UIView {
+public class LogRegView: UIView {
     
     // MARK: - Properties
     
-    lazy var passwordField: CustomTextField = {
+    public lazy var passwordField: CustomTextField = {
         let t = CustomTextField()
         t.translatesAutoresizingMaskIntoConstraints = false
         t.delegate = self
@@ -32,7 +32,7 @@ class LogRegView: UIView {
         return t
     }()
     
-    lazy var usernameField: CustomTextField = {
+    public lazy var usernameField: CustomTextField = {
         let t = CustomTextField()
         t.translatesAutoresizingMaskIntoConstraints = false
         t.delegate = self
@@ -42,7 +42,7 @@ class LogRegView: UIView {
         return t
     }()
     
-    lazy var emailField: CustomTextField = {
+    public lazy var emailField: CustomTextField = {
         let t = CustomTextField()
         t.translatesAutoresizingMaskIntoConstraints = false
         t.textContentType = UITextContentType.emailAddress
@@ -53,7 +53,7 @@ class LogRegView: UIView {
         return t
     }()
     
-    lazy var registerButton: UIButton = {
+    public lazy var registerButton: UIButton = {
         let b = UIButton(type: .system)
         b.translatesAutoresizingMaskIntoConstraints = false
         b.backgroundColor = .red
@@ -64,7 +64,7 @@ class LogRegView: UIView {
         return b
     }()
     
-    lazy var loginButton: UIButton = {
+    public lazy var loginButton: UIButton = {
         let b = UIButton(type: .system)
         b.translatesAutoresizingMaskIntoConstraints = false
         b.backgroundColor = .clear
@@ -94,7 +94,7 @@ class LogRegView: UIView {
     var registering = true
     var stackViewHeight: NSLayoutConstraint?
     var delegate: LogRegViewDelegate?
-    var fieldColor: UIColor = .white {
+    public var fieldColor: UIColor = .white {
         didSet {
             setField(color: fieldColor)
         }
@@ -102,19 +102,19 @@ class LogRegView: UIView {
     
     // MARK: - Initializer
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
         setField(color: .white)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     // MARK: - Views
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         endEditing(true)
     }
     
@@ -125,7 +125,7 @@ class LogRegView: UIView {
         emailField.backgroundColor = color
     }
     
-    private func setupViews() {
+    func setupViews() {
         
         addSubview(stackView)
         
@@ -214,11 +214,11 @@ class LogRegView: UIView {
 
 extension LogRegView: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
         (textField as! CustomTextField).normalMode()
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == nil || textField.text!.isBlank {
             (textField as! CustomTextField).errorMode()
         }
