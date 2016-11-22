@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MMLoginRegister
+//@testable import MMLoginRegister
 
 class MMLoginRegisterTests: XCTestCase {
     

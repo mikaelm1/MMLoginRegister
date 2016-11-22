@@ -12,6 +12,9 @@
 		70EA2DB91DE3EE0900F7B660 /* MMLoginRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EA2DAB1DE3EE0900F7B660 /* MMLoginRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EA2DCC1DE3F8C600F7B660 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */; };
 		70EA2DCE1DE3F94500F7B660 /* LogRegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */; };
+		70EA2DD51DE416C400F7B660 /* LogRegViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DD41DE416C400F7B660 /* LogRegViewTests.swift */; };
+		70EA2DD61DE4171F00F7B660 /* LogRegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */; };
+		70EA2DD71DE418CF00F7B660 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,7 @@
 		70EA2DB81DE3EE0900F7B660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ../Sources/CustomTextField.swift; sourceTree = "<group>"; };
 		70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogRegView.swift; path = ../Sources/LogRegView.swift; sourceTree = "<group>"; };
+		70EA2DD41DE416C400F7B660 /* LogRegViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogRegViewTests.swift; path = ../Tests/LogRegViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		70EA2DC51DE3F07E00F7B660 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				70EA2DD41DE416C400F7B660 /* LogRegViewTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -230,6 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EA2DD71DE418CF00F7B660 /* CustomTextField.swift in Sources */,
+				70EA2DD51DE416C400F7B660 /* LogRegViewTests.swift in Sources */,
+				70EA2DD61DE4171F00F7B660 /* LogRegView.swift in Sources */,
 				70EA2DB71DE3EE0900F7B660 /* MMLoginRegisterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
