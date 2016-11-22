@@ -7,14 +7,15 @@ env:
   - WORKSPACE=MMLoginRegister/MMLoginRegister.xcworkspace
   - IOS_SCHEME="MMLoginRegister"
   - IOS_SDK=iphonesimulator10.0
-  matrix:
-    - DESTINATION="OS=10.0,name=iPhone 4S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 5"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 5S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 6"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 6S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=10.0,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+  - DESTINATION="OS=10.0,name=iPhone 6" SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+  # matrix:
+    # - DESTINATION="OS=10.0,name=iPhone 4S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 5"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 5S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 6"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 6S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    # - DESTINATION="OS=10.0,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
 script:
   - set -o pipefail
   - xcodebuild -version
@@ -28,6 +29,6 @@ script:
     fi
 
   # Run `pod lib lint` if specified
-  - if [ $POD_LINT == "YES" ]; then
-      pod lib lint --private --verbose;
-    fi
+  # - if [ $POD_LINT == "YES" ]; then
+  #     pod lib lint --private --verbose;
+  #   fi

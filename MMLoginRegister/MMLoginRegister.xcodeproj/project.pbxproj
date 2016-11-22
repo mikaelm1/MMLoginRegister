@@ -13,6 +13,8 @@
 		70EA2DC41DE3EFFE00F7B660 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DC31DE3EFFE00F7B660 /* Car.swift */; };
 		70EA2DC71DE3F0C900F7B660 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DC61DE3F0C900F7B660 /* CarTests.swift */; };
 		70EA2DC81DE3F15000F7B660 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DC31DE3EFFE00F7B660 /* Car.swift */; };
+		70EA2DCC1DE3F8C600F7B660 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */; };
+		70EA2DCE1DE3F94500F7B660 /* LogRegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		70EA2DB81DE3EE0900F7B660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70EA2DC31DE3EFFE00F7B660 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../Sources/Car.swift; sourceTree = "<group>"; };
 		70EA2DC61DE3F0C900F7B660 /* CarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTests.swift; path = ../Tests/CarTests.swift; sourceTree = "<group>"; };
+		70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ../Sources/CustomTextField.swift; sourceTree = "<group>"; };
+		70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogRegView.swift; path = ../Sources/LogRegView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				70EA2DC31DE3EFFE00F7B660 /* Car.swift */,
+				70EA2DCB1DE3F8C600F7B660 /* CustomTextField.swift */,
+				70EA2DCD1DE3F94500F7B660 /* LogRegView.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -222,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EA2DCC1DE3F8C600F7B660 /* CustomTextField.swift in Sources */,
+				70EA2DCE1DE3F94500F7B660 /* LogRegView.swift in Sources */,
 				70EA2DC41DE3EFFE00F7B660 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
