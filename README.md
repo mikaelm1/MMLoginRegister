@@ -26,7 +26,7 @@
 
 ## Usage
 
-Setup is done programatically inside the view controller that will handle the login and registration.
+Setup is done programmatically inside the view controller that will handle the login and registration.
 
 #### Declare the variable inside your view controller
 ```swift 
